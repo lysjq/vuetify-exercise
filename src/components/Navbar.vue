@@ -4,9 +4,11 @@
         <v-toolbar-title>Title</v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items>
-            <v-btn flat>text</v-btn>
-            <v-btn flat>text</v-btn>
-            <v-btn flat>text</v-btn>
+            <v-btn flat>
+                <div class="Navbar-title">首页</div>
+            </v-btn>
+            <v-btn flat class="Navbar-title">方案展示</v-btn>
+            <v-btn flat class="Navbar-title">开始设计</v-btn>
         </v-toolbar-items>
     </v-toolbar>
 </template>
@@ -20,4 +22,8 @@ export default {
 };
 </script>
 <style>
+.Navbar-title {
+    size: 60px;
+}
 </style>
+

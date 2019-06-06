@@ -5,10 +5,10 @@
             <img src="../assets/avator1.jpg" alt="alt">
         </v-avatar>
         <v-list>
-            <v-list-tile avatar v-for="item in items" :key="item.text" :to="item.to" ripple>
-                <v-list-tile-avatar>
-                    <v-icon>{{item.icon}}</v-icon>
-                </v-list-tile-avatar>
+            <v-list-tile avatar v-for="item in items" :key="item.text" :to="item.to" ripple active-class="green">
+                <v-list-tile-action>
+                    <v-icon x-large>{{item.icon}}</v-icon>
+                </v-list-tile-action>
                 <v-list-tile-title>{{item.text}}</v-list-tile-title>
             </v-list-tile>
         </v-list>
@@ -21,10 +21,10 @@ export default {
     data: function() {
         return {
             items: [
-                { text: "home", icon: "done", to: "/home" },
-                { text: "home2", icon: "done", to: "home2" },
-                { text: "home3", icon: "done" },
-                { text: "home4", icon: "record_voice_over" }
+                { text: "展示", icon: "view_quilt", to: "/dashboard" },
+                { text: "信息", icon: "done", to: "/home2" },
+                { text: "可视化图表", icon: "done", to:"/view" },
+                { text: "关于", icon: "record_voice_over" }
             ]
         };
     },

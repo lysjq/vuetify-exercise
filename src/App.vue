@@ -2,16 +2,18 @@
     <v-app>
         <Navbar></Navbar>
         <Navdrawer></Navdrawer>
-        <router-view></router-view>
+        <Mainview></Mainview>
     </v-app>
 </template>
 <script>
 import Navbar from "./components/Navbar";
 import Navdrawer from "./components/Navdrawer";
+import Mainview from './components/Mainview';
 export default {
     components: {
         Navbar,
-        Navdrawer
+        Navdrawer,
+        Mainview
     }
 };
 </script>
