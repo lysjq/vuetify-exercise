@@ -1,6 +1,6 @@
 <template>
     <v-container class="my-parax">
-        <div style="height:600px"></div>
+        <div style="height:200px"></div>
         <v-parallax :src="require('../assets/6.png')" height="1000">
             <v-layout justify-center align-center>
                 <h1>hello world</h1>

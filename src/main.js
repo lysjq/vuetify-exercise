@@ -5,8 +5,7 @@ import store from './store'
 import Vuetify from 'vuetify/lib'
 import 'vuetify/src/stylus/app.styl'
 Vue.use(Vuetify);
-Vue.config.productionTip = false
-
+Vue.config.productionTip = false;
 new Vue({
   router,
   store,
